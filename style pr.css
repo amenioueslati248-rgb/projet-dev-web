@@ -1,6 +1,6 @@
 
 body {
-    background:black;
+    background:linear-gradient(153deg,#add8e6,#8A2BE2);
     color: white;
     margin: 0;
     padding: 20px;
@@ -26,13 +26,13 @@ h1 {
 .description {
     max-width: 500px;
     margin: 0 auto;
-    color:#B0B0CC;
+    color:black;
     line-height: 1.5;
 
 }
 
 .player-container {
-    background:black;
+    background:#1A1A2E;
     border-radius: 16px;
     width: 100%;
     max-width: 500px;
@@ -78,7 +78,7 @@ h1 {
 .time-display {
     display: flex;
     justify-content: space-between;
-    color: #B0B0CC;
+    color:#9a3bf2;
     font: size 0.9em;;
     margin-bottom: 20px;
 }
@@ -158,6 +158,27 @@ h1 {
     font-size: 1.2rem;
     text-align: center;
 }
+
+.tracks {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.track-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.track-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.track-item:last-child {
+    border-bottom: none;
+}
+
 footer {
     margin-top: 30px;
     text-align: center;

@@ -7,50 +7,67 @@
     <link rel="stylesheet" href="style pr.css">
 </head>
 <body>
+
     <header>
         <h1>Mini Lecteur Audio</h1>
-        <p class="description">Un lecteur audio avec contrôle du volume, navigation entre pistes et animations CSS.</p>
+        <p class="description">
+            Un lecteur audio avec contrôle du volume, navigation entre pistes.
+        </p>
     </header>
+    <button id="themeToggle" class="btn" title="Changer le thème">🌓</button>
+
 
     <div class="player-container">
+         
         <div class="track-info">
             <div class="track-title">Titre de la piste</div>
             <div class="track-artist">Artiste</div>
         </div>
-        
-       
+        <div class="album">
+            <img src="" alt="Cover de la piste">
+        </div>
+
         <div class="controls">
+
             <div class="progress-container">
                 <div class="progress-bar"></div>
             </div>
+
             <div class="time-display">
                 <span class="current-time">0:00</span>
                 <span class="duration">0:00</span>
             </div>
-            
+
             <div class="buttons">
                 <button class="btn btn-prec" title="Piste précédente">⏮</button>
                 <button class="btn btn-play" title="Lecture/Pause">▶</button>
                 <button class="btn btn-next" title="Piste suivante">⏭</button>
+                <button class="btn btn-repeat" title="Répéter">🔁</button>
             </div>
-            
+
             <div class="volume-container">
                 <span class="volume-icon">🔊</span>
                 <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7">
             </div>
+
         </div>
     </div>
 
     <div class="track-list">
         <h2>Liste de lecture</h2>
+        <div class="track-search">
+            <input type="text" id="searchInput" placeholder="Rechercher une piste...">
+        </div>
+
         <div class="tracks" id="trackList">
-        
+            <!-- Les pistes seront ajoutées dynamiquement ici -->
         </div>
     </div>
 
     <footer>
         <p>Mini Lecteur Audio - Démonstration Audio API et DOM</p>
     </footer>
+
     <script src="script.js"></script>
 
 </body>
